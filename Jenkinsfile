@@ -15,7 +15,7 @@ pipeline {
 					agent {
 						docker {
 							image 'maven:3-alpine' 
-							args '--network host -v /root/.m2:/root/.m2' 
+							args '--network host -v /root/.m2:/root/.m2 -u 0' 
 						}
 					}
 					steps {
